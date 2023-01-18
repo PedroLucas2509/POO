@@ -40,7 +40,7 @@ fun main() {
  var dinossauro = animal("réptil", 'M', "Qualquer lugar no período jusassico",
                         "Carnívoro", 397, true)    
  //println("Meu animal é um "+dinossauro.classe+" ele é "+dinossauro.dieta+" e tem "+dinossauro.idade+" anos")
- dinossauro.Atacar(false)
+ dinossauro.Feliz(true)
 }
 class Pessoa(val nome:String, val altura:Double, val corDosOlhos:String, val peso:Double){
     //declarando atributos para a classe
@@ -54,18 +54,22 @@ class Pessoa(val nome:String, val altura:Double, val corDosOlhos:String, val pes
 class animal(val classe:String, val genero:Char, val habitat:String, val dieta:String, val idade:Int, 
             val voa:Boolean){
     
-fun Atacar(bravo: Boolean){
+/*fun Atacar(bravo: Boolean){
     if(bravo == true){
     println("Animal atacando")
     }else{
         println("Animal de boa, suavao")
+    }*/
+   fun Feliz(feliz: Boolean){
+    if(feliz == true){
+    println("Animal Pulando de Felicidade")
+    }else{
+        println("Animal de boa")
     }
-   
-    
 }   
-    
+ //Exercicio: Faça um novo comportamento para o seu animal usando uma nova fun   
     
 }
 //Métodos - Comportamentos da nossa classe, que os nossos objetos receberão
 //eles são declarados usando funções
-
+   
