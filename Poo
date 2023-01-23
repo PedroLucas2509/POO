@@ -72,4 +72,20 @@ class animal(val classe:String, val genero:Char, val habitat:String, val dieta:S
 }
 //Métodos - Comportamentos da nossa classe, que os nossos objetos receberão
 //eles são declarados usando funções
+
+// Conta No banco
+
+   val contaCorrente = ContaNoBanco(4002, 8922.00, "Safra", "Franco Francescco Aguero") 
+    
+   contaCorrente.consultarSaldo() 
+   
+}
+class ContaNoBanco(var senha: Int, var saldo: Double,
+                  var banco: String, var dono: String){
+   fun consultarSaldo(){
+       println("O saldo da sua conta é R$$saldo")
+       
+   } 
+    
+ }
    
